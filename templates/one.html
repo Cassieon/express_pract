@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>${album.name}</title>
+</head>
+<body>
+    <ul>
+        ${musicLib.map(album[0] => `
+            <li>${album.name}</li>
+            <li>${album.publishDate}</li>
+            <li>${album.imgURL}</li>
+            <li>${album.songTitles}</li>
+        `).join('')}
+    </ul>
+</body>
+</html>
